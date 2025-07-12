@@ -73,9 +73,19 @@ export default function Home() {
                  <MapPin className="h-10 w-10 mb-4 text-primary" />
                  <h3 className="text-x1 font-semibold mb-2">Encontro de Jovens</h3>
                  <p className="text-muted-foreground mb-4">
-                   Sabado às 19:30 - Celebrando com os jovens tendo palavra e dinâmica em foco na Palavra de Deus
+                   Sabado às 19:30 - Celebrando com os jovens tendo palavra e dinâmica em foco na Palavra de Deus.
                  </p>
                  <Button variant="secondary" className="w-full">Saiba Mais</Button>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="pt-6">
+                <MapPin className="h-10 w-10 mb-4 text-primary" />
+                <h3 className="text-x1 font-semibold mb-2">Encontro dos Homens</h3>
+                <p className="text-muted-foregrond mb-4">
+                  Sabado às 18:30 - Venha aprender mais do Evangelho de Cristo para formar um exercito dos homens batistas de Jesus e anunciar a Palavra de Deus.
+                </p>
+                <Button variant="secondary" className="w-full">Saiba Mais</Button>
               </CardContent>
             </Card>
           </div>
