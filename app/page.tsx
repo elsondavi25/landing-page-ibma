@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, MapPin } from "lucide-react";
+import React from "react";
 import Image from "next/image";
+import IstockPhoto from './istockphoto-157279647-1024x1024.jpg'
 import Link from "next/link";
 
 export default function Home() {
@@ -33,6 +35,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+  return (
+    <div>
+      <Image
+        src={IstockPhoto}
+        alt="Templo Batista"
+        width={1024}
+        height={683}
+      />
+    </div>
+  );
 
       <section className="py-16 bg-muted/50 px-5">
         <div className="container">
@@ -82,14 +95,37 @@ export default function Home() {
               <CardContent className="pt-6">
                 <MapPin className="h-10 w-10 mb-4 text-primary" />
                 <h3 className="text-x1 font-semibold mb-2">Encontro dos Homens</h3>
-                <p className="text-muted-foregrond mb-4">
+                <p className="text-muted-foreground mb-4">
                   Sabado às 18:30 - Venha aprender mais do Evangelho de Cristo para formar um exercito dos homens batistas de Jesus e anunciar a Palavra de Deus.
                 </p>
                 <Button variant="secondary" className="w-full">Saiba Mais</Button>
               </CardContent>
             </Card>
+            <Card>
+              <CardContent className="pt-6">
+                <MapPin className="h-10 w-10 mb-4 text-primary" />
+                <h3 className="text-x1 font-semibold mb-2">Aniversariantes do Mês</h3>
+                <p className="text-muted-foreground mb-4">
+                  Sendo um Membro ou Congregado da Igreja Você é lembrado no seu dia que está completando mais um ano de vida, com mensagens parabenizando pelo seu dia, recebendo mais um ano tendo mais uma oportunidade dada por Deus e continuar servindo a Deus com seus dons e talentos.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
+      </section>
+
+      <section className="py-16 bg-primary text-primary-foreground">
+         <div className="container text-center">
+            <h2 className="text-3x1 font-bold mb-4">
+               Venha conheçer mais da Igreja Batista Manancial no Angelim
+            </h2>
+            <p className="text-x1 mb-8 max-w-2x1 mx-auto">
+              A Igreja foi fundada em 2004 por americanos que vieram ajudar a construir o templo, o pastor que começou a auxiliar na construção foi Isaias e também com os trabalhos da Igreja.
+            </p>
+            <Button variant="secondary" size="lg">
+                <Link href="/sobre">Procure saber mais da Igreja</Link>
+            </Button>
+         </div>
       </section>
 
       <section className="py-16 bg-primary text-primary-foreground">
